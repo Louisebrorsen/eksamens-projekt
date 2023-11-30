@@ -1,0 +1,67 @@
+/* Lave .col */
+.col-1 {
+  width: 8.3333333333%;
+}
+
+/* Lave .col */
+.col-2 {
+  width: 16.6666666667%;
+}
+
+/* Lave .col */
+.col-3 {
+  width: 25%;
+}
+
+/* Lave .col */
+.col-4 {
+  width: 33.3333333333%;
+}
+
+/* Lave .col */
+.col-5 {
+  width: 41.6666666667%;
+}
+
+/* Lave .col */
+.col-6 {
+  width: 50%;
+}
+
+/* Lave .col */
+.col-7 {
+  width: 58.3333333333%;
+}
+
+/* Lave .col */
+.col-8 {
+  width: 66.6666666667%;
+}
+
+/* Lave .col */
+.col-9 {
+  width: 75%;
+}
+
+/* Lave .col */
+.col-10 {
+  width: 83.3333333333%;
+}
+
+/* Lave .col */
+.col-11 {
+  width: 91.6666666667%;
+}
+
+/* Lave .col */
+.col-12 {
+  width: 100%;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.row {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */

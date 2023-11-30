@@ -1,0 +1,15 @@
+
+@for $i from 1 through 12 {   /* Lave .col */
+    .col-#{$i} {
+        width: 100%/12 * $i;
+    }
+}
+
+body{
+    background-color:#ffffff;
+    
+}
+
+.row{
+    display: flex;
+}
