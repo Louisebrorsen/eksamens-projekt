@@ -65,4 +65,9 @@ body {
 .row {
   display: flex;
   align-content: center;
+}
+
+.logo.trapholt-logo {
+  width: 20 px;
+  height: 200;
 }/*# sourceMappingURL=style.css.map */
