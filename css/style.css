@@ -64,4 +64,5 @@ body {
 
 .row {
   display: flex;
+  align-content: center;
 }/*# sourceMappingURL=style.css.map */
