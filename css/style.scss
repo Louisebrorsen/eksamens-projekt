@@ -1,21 +1,26 @@
 
+/* Scss til at lave .col-# */
 @for $i from 1 through 12 {   /* Lave .col */
     .col-#{$i} {
         width: 100%/12 * $i;
     }
 }
 
-body{
-    background-color:#ffffff;
-    
+/* Denne del gør websiden egenet til at kunne bruges til forskellige enheder */
+@for $i from 1 through 12 {   /* Medium .col */
+    @media screen and (min-width: 768px) {
+        .col-md-#{$i} {
+            width: 100%/12 * $i;
+        }
+    }
 }
 
-.row{
-    display: flex;
-    align-content: center;
+/* Kode til at ændre farve og form på menu */
+.navbar {
+    background-color: #000000;
+    border-radius: 0px;
 }
 
-.logo.trapholt-logo{
-    width: 20 px;
-height: 200;
+.body{
+    background-color: red;
 }

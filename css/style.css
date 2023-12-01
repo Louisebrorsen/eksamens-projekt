@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Scss til at lave .col-# */
 /* Lave .col */
 .col-1 {
   width: 8.3333333333%;
@@ -58,16 +60,85 @@
   width: 100%;
 }
 
-body {
-  background-color: #ffffff;
+/* Denne del gør websiden egenet til at kunne bruges til forskellige enheder */
+/* Medium .col */
+@media screen and (min-width: 768px) {
+  .col-md-1 {
+    width: 8.3333333333%;
+  }
+}
+/* Medium .col */
+@media screen and (min-width: 768px) {
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+}
+/* Medium .col */
+@media screen and (min-width: 768px) {
+  .col-md-3 {
+    width: 25%;
+  }
+}
+/* Medium .col */
+@media screen and (min-width: 768px) {
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+}
+/* Medium .col */
+@media screen and (min-width: 768px) {
+  .col-md-5 {
+    width: 41.6666666667%;
+  }
+}
+/* Medium .col */
+@media screen and (min-width: 768px) {
+  .col-md-6 {
+    width: 50%;
+  }
+}
+/* Medium .col */
+@media screen and (min-width: 768px) {
+  .col-md-7 {
+    width: 58.3333333333%;
+  }
+}
+/* Medium .col */
+@media screen and (min-width: 768px) {
+  .col-md-8 {
+    width: 66.6666666667%;
+  }
+}
+/* Medium .col */
+@media screen and (min-width: 768px) {
+  .col-md-9 {
+    width: 75%;
+  }
+}
+/* Medium .col */
+@media screen and (min-width: 768px) {
+  .col-md-10 {
+    width: 83.3333333333%;
+  }
+}
+/* Medium .col */
+@media screen and (min-width: 768px) {
+  .col-md-11 {
+    width: 91.6666666667%;
+  }
+}
+/* Medium .col */
+@media screen and (min-width: 768px) {
+  .col-md-12 {
+    width: 100%;
+  }
+}
+/* Kode til at ændre farve og form på menu */
+.navbar {
+  background-color: #000000;
+  border-radius: 0px;
 }
 
-.row {
-  display: flex;
-  align-content: center;
-}
-
-.logo.trapholt-logo {
-  width: 20 px;
-  height: 200;
+.body {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
