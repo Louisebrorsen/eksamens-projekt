@@ -73,4 +73,9 @@ body {
 
 header {
   padding-bottom: 100px;
+}
+
+.hero-1 {
+  display: flex;
+  max-height: 250px;
 }/*# sourceMappingURL=style.css.map */
