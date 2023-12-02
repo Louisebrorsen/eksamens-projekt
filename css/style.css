@@ -80,6 +80,12 @@ body {
    height: 757px; */
 }
 
+.img {
+  background-color: red;
+  /* width: 674px;
+  height: 757px; */
+}
+
 .logo-li {
   height: 20px;
   width: 40px;
@@ -87,4 +93,19 @@ body {
 
 .weekdays {
   display: flex;
+}
+
+.footer {
+  background-color: rgb(195, 245, 195);
+}
+.footer p {
+  font-size: small;
+  margin: 0%;
+}
+
+.sm {
+  padding-left: 20px;
+}
+.sm .span .mdi {
+  color: 0;
 }/*# sourceMappingURL=style.css.map */

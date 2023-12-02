@@ -41,9 +41,11 @@ body{
 
 }
 
-
-
-
+.img{
+    background-color: red;
+    /* width: 674px;
+    height: 757px; */
+}
 
 .logo-li{
     height: 20px;
@@ -52,4 +54,21 @@ body{
 
 .weekdays{
     display: flex;
+}
+
+.footer{
+    background-color: rgb(195, 245, 195);
+    p{
+        font-size: small;
+        margin: 0%;
+    }
+}
+
+.sm{
+    padding-left: 20px;
+    .span{
+        .mdi{
+            color: red($color: #000000);
+        }
+    }
 }
