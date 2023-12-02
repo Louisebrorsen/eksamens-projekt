@@ -103,9 +103,10 @@ body {
   margin: 0%;
 }
 
-.sm {
-  padding-left: 20px;
-}
-.sm .span .mdi {
-  color: 0;
+.footer-icons {
+  width: 135px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
 }/*# sourceMappingURL=style.css.map */
