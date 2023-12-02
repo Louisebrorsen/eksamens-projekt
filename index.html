@@ -18,9 +18,12 @@
   </head>
   <body>
     
+    <!-- Koden til navbaren starter her.  -->
     <nav class="navbar fixed-top">
         <div class="container-fluid">
-          <!-- Her er afsnittet til logoet-->
+          <!-- Her er afsnittet til logoet
+          Logoet vil have en funktion så når den bliver trykket på, vil den linke til forsiden.
+          -->
           <a class="navbar-brand" href="#">
             <img
               src="img/logo.png"
@@ -30,7 +33,11 @@
               class="d-inline-block align-text-top"
             />
           </a>
-          <!-- Menu bar -->
+          <!-- Menu bar 
+          Her er menu baren, som er lavet med en ul liste, hvor der er blevet tilføjet en li med en a tag, som er blevet tilføjet en href, som linker til de forskellige sider.
+          Koden er fra bootstrap, hvor den er blevet tilpasset så den passer til stil og design. Samt har de ønskede funktioner.
+          Farve er ændret med scss, hvor der er blevet tilføjet en variabel med den ønskede farve, som er blevet tilføjet til ul og li.
+          -->
           <ul class="nav justify-content-center">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"
@@ -53,7 +60,14 @@
               <a class="nav-link" href="#">Kontakt</a>
             </li>
           </ul>
-          <!-- Søg og burger menu -->
+          <!-- Søg og burger menu
+          Søg er lavet med en input type text, hvor der er blevet tilføjet en placeholder, og koden er fra bootstrap.
+          Burger menuen er lavet med en dropdown knap, hvor der er blevet tilføjet en knap med en dropdown menu, hvor der er blevet tilføjet en liste med links til de forskellige sider.
+          Dropdown menuens kode er fra bootstrap, hvor den er blebvet tilpasset så den passer til stil og design. Samt har de ønskede funktioner.
+          Denne første udgave er endnu ikke helt tilpasset, der ønskes at søge funktionen har en span icon, som udvider sig ved hoover eller der bliver trykket.
+          Burger menuen skal også have en span icon, som udvider sig ved hoover eller der bliver trykket, lige nu er det kun knappen som udvider sig, og udvider sig til højre side, 
+          det ønkes den vender mod venstre side.
+          -->
           <div class="d-flex">
             <div class="search">
               <input type="text" placeholder="Søg" />
@@ -80,13 +94,26 @@
         </div>
       </nav>
 
-        <!-- Her starter først afsnit, med Trapholt logo og en karusel-->
+        <!-- Her starter først afsnit, med Trapholt logo og en karusel
+        Logoet er lavet af de andre hvor beggrunden er fjernet, hvor billedet efterfølgende er blevet justeret i størrelsen for at passe.
+        Karusellen er lavet med bootstrap, hvor der er blevet tilføjet en caption til hver slide som beskriver billedet. Billederne er 
+        lavet i photoshop, hvor der er justeret størrelsen så de passer til karusellen og så de har samme størrelse.
+        Under starter koden som viser logoet på siden af karusellen. I dennne udgave er det ikke tilpasset, så det passer til designet.
+        -->
 
       <div class="container-fluid">
         <div class="row">
           <div class="col-2">
             <img src="Img/trapholt-logo.png" alt="">
           </div>
+
+          <!-- Her starter koden til karusellen.
+          Den er lavet med bootstrap, hvor der er blevet tilføjet en caption til hver slide som beskriver billedet. 
+          Den er opsat ved at have 3 billeder, hvor den første er sat til active, så den starter med at vise det første billede.
+          I koden er der til at indsætte ønskede billede ved img src, og den har også en alt tekst, hvis billedet ikke kan vises.
+          Derudover er der beskrivelses bokse til at kunne tilføje tekst til billederne, som er blevet tilføjet i hver slide.
+          h5 er en headline som skal give en overordnet beskrivelse af billedet, og p er en paragraph som skal give en mere detaljeret beskrivelse af billedet.
+          -->
           <div class="col-10">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
               <div class="carousel-indicators">
@@ -117,6 +144,8 @@
                   </div>
                 </div>
               </div>
+              <!-- Dettte er koden fra bootstrap der går at karusel funktionen fungerer. 
+                Den gør at når pilene bliver trykket eller når der er gået en hvis tid skifter til næste. -->
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -129,11 +158,18 @@
           </div>
         </div>
       </div>
-      <!-- andet afsnit indeholder tekst og billede -->
+      <!-- andet afsnit indeholder tekst og billede.
+      De er opdelt i col-5 og col-7, hvor col-5 er til venstre og col-7 er til højre. Dette er gjort for at få det til at passe med designet fra XD.
+      Teksten er lavet med en h1 tag, som er en headline, og en p tag, som er en paragraph.
+      Billedet er lavet med en img tag, hvor der er blevet tilføjet en src, som linker til billedet, og en alt tekst, hvis billedet ikke kan vises.
+      Det er opdelt i col for at tilpasse det til designet fra XD, hvor col-5 giver teksten lov til at fylde mindre og col-7 giver billedet lov til at fylde mere.
+      Man kan se opdelingen af % af de forskellige col elementer i css filen.
+      -->
       <div class="container-fluid">
         <div class="row">
           <div class="col-5 tekst">
-            TEKST
+            <h1>TEKST</h1>
+            <p>jjfjjfjf</p>
           </div>
           <div class="col-7 img">
             billede
@@ -141,7 +177,11 @@
           </div>
         </div>
       </div>
-      <!-- tredje afsnit indeholder dagsprogrammer -->
+      <!-- tredje afsnit indeholder dagsprogrammer
+      Den er opstat med samme opdeling som det andet afsnit, hvor col-5 er til venstre og col-7 er til højre.
+      I col-7 er der indsat en ul liste, hvor der er blevet tilføjet en li med en a tag, som er blevet tilføjet en href, som linker til de forskellige tider der er i dagsprogrammet.
+      
+      -->
       <div class="container-fluid">
         <div class="row">
           <div class="col-5 img">
