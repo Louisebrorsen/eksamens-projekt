@@ -103,8 +103,8 @@
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-2">
-            <img src="Img/trapholt-logo.png" alt="">
+          <div class="col-2 img">
+            <img src="" alt="">
           </div>
 
           <!-- Her starter koden til karusellen.
@@ -180,19 +180,33 @@
       <!-- tredje afsnit indeholder dagsprogrammer
       Den er opstat med samme opdeling som det andet afsnit, hvor col-5 er til venstre og col-7 er til højre.
       I col-7 er der indsat en ul liste, hvor der er blevet tilføjet en li med en a tag, som er blevet tilføjet en href, som linker til de forskellige tider der er i dagsprogrammet.
-      
       -->
       <div class="container-fluid">
         <div class="row">
           <div class="col-5 img">
-            billede af dagsprogram
-            <img src="" alt="">
+            <div class="card">
+              <div class="card-header">
+                Calendar
+              </div>
+              <div class="card-body">
+                <div class="col-7">
+                  December
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Liste til dagene -->
           <div class="col-7 tekst">
             <h1>Dagens program</h1>
             <div class="row">
               <ul class="list-group list-group-horizontal">
-                <li class="list-group-item">logo</li>
+                <li class="list-group-item">
+                  <img src="Img/logo.png" class="logo-li" alt="">
+                </li>
+                <li class="list-group-item">
+                  <a href="#">10:00</a>
+                </li>
                 <li class="list-group-item">A second item</li>
               </ul>
               <ul class="list-group list-group-horizontal-sm">
@@ -221,6 +235,10 @@
         </div>
 
         <!-- Her starter footer -->
+
+        <div class="container">
+
+        </div>
        
         <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
