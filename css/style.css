@@ -78,4 +78,21 @@ header {
 .hero-1 {
   display: flex;
   max-height: 250px;
+}
+
+.row {
+  padding: 20px;
+  display: flex;
+}
+
+.tekst {
+  background-color: blue;
+  /*  width: 674px;
+   height: 757px; */
+}
+
+.img {
+  background-color: red;
+  /*  width: 812px;
+   height: 757px; */
 }/*# sourceMappingURL=style.css.map */
