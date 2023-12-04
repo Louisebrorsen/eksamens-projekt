@@ -135,4 +135,9 @@ body {
 
 .col-4.nyhed p {
   font-size: x-small;
+}
+
+.img-fluid {
+  width: 100px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
