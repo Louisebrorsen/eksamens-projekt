@@ -43,8 +43,10 @@ body{
 
 .img{
     background-color: red;
-    /* width: 674px;
-    height: 757px; */
+    img{
+        width: auto;
+    }
+    
 }
 
 .logo-li{
