@@ -6,6 +6,16 @@
     }
 }
 
+.bg-mbl{
+    background-color: #3C4653;
+
+}
+
+.bg-mb{
+    background-color: #594E3B;
+}
+
+
 /* Den primære baggrundsfarve for hjemmesiden og undersiderne */
 body{
     background-color: #f5f5f5;
@@ -14,13 +24,14 @@ body{
 /* Den primære baggrundsfarve for headeren
 */
 .navbar{
-    background-color: #f5f5f5;
+    background-color: #917856;
     
-}
+    
+} 
 
 /* Ændringen af fareven på teksten i navbaren. */
 .nav-link{
-    color: black;
+    color: #f5f5f5;
 }
 
 
@@ -34,15 +45,12 @@ body{
     padding: 20px;
     display: flex;
 }
+
 .tekst{
-    background-color: blue;
-   /*  width: 674px;
-    height: 757px; */
+    color: #f5f5f5;
 
 }
-
 .img{
-    background-color: red;
     img{
         width: auto;
     }
@@ -102,7 +110,17 @@ body{
     }
 }
 
-.img-fluid{
+.img-fit{
+    width: 100%;
+    height: auto;
+}
+
+.bund{
     width: 100px;
     height: auto;
 }
+
+hr {
+    border-top: 8px solid #917856; 
+  }
+  
