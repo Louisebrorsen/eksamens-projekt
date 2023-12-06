@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Koden til navbaren starter her.  -->
-    <nav class="navbar fixed-top bg-br">
+    <nav class="navbar bg-br">
       <div class="container-fluid">
         <!-- Her er afsnittet til logoet
           Logoet vil have en funktion så når den bliver trykket på, vil den linke til forsiden.
@@ -96,17 +96,17 @@
         Under starter koden som viser logoet på siden af karusellen. I dennne udgave er det ikke tilpasset, så det passer til designet.
         -->
 
-    <div class="container-fluid" style="margin-top: 120px;">
+    <div class="container-fluid">
       <div class="row">
         
 
         <!-- Her starter koden til karusellen.
-          Den er lavet med bootstrap, hvor der er blevet tilføjet en caption til hver slide som beskriver billedet. 
-          Den er opsat ved at have 3 billeder, hvor den første er sat til active, så den starter med at vise det første billede.
-          I koden er der til at indsætte ønskede billede ved img src, og den har også en alt tekst, hvis billedet ikke kan vises.
-          Derudover er der beskrivelses bokse til at kunne tilføje tekst til billederne, som er blevet tilføjet i hver slide.
-          h5 er en headline som skal give en overordnet beskrivelse af billedet, og p er en paragraph som skal give en mere detaljeret beskrivelse af billedet.
-          -->
+        Den er lavet med bootstrap, hvor der er blevet tilføjet en caption til hver slide som beskriver billedet. 
+        Den er opsat ved at have 3 billeder, hvor den første er sat til active, så den starter med at vise det første billede.
+        I koden er der til at indsætte ønskede billede ved img src, og den har også en alt tekst, hvis billedet ikke kan vises.
+        Derudover er der beskrivelses bokse til at kunne tilføje tekst til billederne, som er blevet tilføjet i hver slide.
+        h5 er en headline som skal give en overordnet beskrivelse af billedet, og p er en paragraph som skal give en mere detaljeret beskrivelse af billedet.
+        -->
           <div
             id="carouselExampleCaptions"
             class="carousel slide"
@@ -210,7 +210,7 @@
       Man kan se opdelingen af % af de forskellige col elementer i css filen.
       -->
     <div class="container-fluid bg-mbl">
-      <div class="row">
+      <div class="row" style="height: 600px;">
         <div class="col-5 tekst" style="padding-top: 20px;">
           <h1>ARNE JACOBSEN</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -225,7 +225,7 @@
       Den er opstat med samme opdeling som det andet afsnit, hvor col-5 er til venstre og col-7 er til højre.
       I col-7 er der indsat en ul liste, hvor der er blevet tilføjet en li med en a tag, som er blevet tilføjet en href, som linker til de forskellige tider der er i dagsprogrammet.
       -->
-    <div class="container-fluid" style="padding-bottom: 60px;">
+    <!-- <div class="container-fluid" style="padding-bottom: 60px;">
       <div class="row">
         <div class="col-5 img">
           <div class="card">
@@ -234,7 +234,9 @@
               <div class="col-7">December</div>
             </div>
           </div>
-        </div>
+        </div> -->
+
+        
 
         <!-- Liste til dagene -->
         <div class="col-7 tekst">
