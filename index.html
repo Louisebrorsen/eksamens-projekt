@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Koden til navbaren starter her.  -->
-    <nav class="navbar fixed-top">
+    <nav class="navbar fixed-top bg-br">
       <div class="container-fluid">
         <!-- Her er afsnittet til logoet
           Logoet vil have en funktion så når den bliver trykket på, vil den linke til forsiden.
@@ -63,9 +63,6 @@
           det ønkes den vender mod venstre side.
           -->
         <div class="d-flex">
-          <div class="search">
-            <input type="text" placeholder="Søg" />
-          </div>
           <div class="dropdown">
             <button
               class="btn"
@@ -73,7 +70,7 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <span class="mdi mdi-menu" style="color: #f5f5f5;"></span>
+              <span class="mdi mdi-menu" style="color: #f5f5f5; font-size: 30px;"></span>
             </button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Forside</a></li>
@@ -83,6 +80,10 @@
               <li><a class="dropdown-item" href="#">Om Trapholt</a></li>
               <li><a class="dropdown-item" href="#">Kontakt</a></li>
             </ul>
+          </div>
+
+          <div class="search">
+            <input type="text" placeholder="søg"  />
           </div>
         </div>
       </div>
@@ -302,10 +303,9 @@
 
     <!-- Her starter footer -->
 
-    <hr>
 
-    <div class="container-fluid footer">
-      <div class="row footer">
+    <div class="container-fluid ">
+      <div class="row footer bg-hvid">
         <div class="col-2">
           <h5>Adresse</h5>
           <p>Æblehaven 23</p>
@@ -381,19 +381,19 @@
     </div>
 
     <!-- nederste del af footer -->
-    <div class="container-fluid justify-content-center">
+    <div class="container-fluid justify-content-start bg-hvid">
       <div class="row">
         <div class="col-4">
           <p>CVR: 11527132
             EAN/ GLN: 5790002745249</p>
         </div>
-        <div class="col-4">
+        <div class="col-4 justify-content-center">
           <img class="img-fluid bund" src="Img/navimg/en-US-UK-2022.webp" alt="">
           <img class="img-fluid bund" src="Img/navimg/kolding-city-design.png" alt="">
           <img class="img-fluid bund" src="Img/navimg/Michelin_Sticker_GV_2019_Interessant_ny.webp" alt="">
         </div>
-        <div class="col-4">
-          <p>© Trapholt 2021</p>
+        <div class="col-4 justify-center-end">
+          <p> © Trapholt 2021</p>
         </div>
       </div>
     </div>

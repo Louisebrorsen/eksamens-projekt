@@ -48,6 +48,14 @@
   width: 100%;
 }
 
+.bg-hvid {
+  background-color: #f5f5f5;
+}
+
+.bg-br {
+  background-color: #917856;
+}
+
 .bg-mbl {
   background-color: #3C4653;
 }
@@ -74,6 +82,10 @@ body {
 /* Ændringen af fareven på teksten i navbaren. */
 .nav-link {
   color: #f5f5f5;
+}
+
+.mdi .mdi-menu {
+  color: #000;
 }
 
 .hero-1 {
@@ -108,7 +120,8 @@ body {
 }
 
 .footer {
-  background-color: #f5f5f5;
+  padding-top: 20px;
+  border-top-style: solid 10px #917856;
 }
 .footer p {
   font-size: small;
