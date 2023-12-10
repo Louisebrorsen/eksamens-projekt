@@ -64,6 +64,14 @@
   background-color: #5386A4;
 }
 
+.bg-g {
+  background-color: #A4AD56;
+}
+
+.bg-mg {
+  background-color: #869053;
+}
+
 /* Den primære baggrundsfarve for hjemmesiden og undersiderne */
 body {
   background-color: #f5f5f5;
@@ -96,6 +104,10 @@ body {
 
 .tekst {
   color: #f5f5f5;
+}
+
+.s-tekst {
+  color: #000;
 }
 
 .img img {
@@ -173,5 +185,4 @@ h1 {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem;
-  color: #f5f5f5;
 }/*# sourceMappingURL=style.css.map */
