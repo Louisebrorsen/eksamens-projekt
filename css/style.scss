@@ -235,16 +235,41 @@ hr {
     .mobil-img {
         padding-top: 10px; 
         padding-left: 0px;
+        padding-bottom: 20px;
     }
 
     #mobil-img img {
         width: 100%;
         max-height:400px;
+       
    
     }   
+
+    #mobil-tekst{
+        padding-bottom: 20px;
+    }
+
+    .navbar{
+        background-color: #917856;
+        .navbar-brand{
+            padding-left: 10px;
+            img{
+                width: 250px;
+                height: auto;
+            
+            }
+        }
+
+        
+    }
+    .container {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
     .logo-li{
-        height: 50%px;
-        width: 50%;
+        height: 10px;
+        width: 20px;
     }
 
     h1 {
@@ -255,15 +280,17 @@ hr {
         color: #111;
     }
 
-    .container {
+    .container-fluid {
         width: 100%;
-        background-color: #f5f5f5;
     }
 
     .row {
-        padding: 0px;
         display: flex;
         background-color: #f5f5f5;
+    }
+
+    .dropdown {
+        color: #111;
     }
    
   }
@@ -277,6 +304,19 @@ Denne gør at de elementer med web i deres klasser forsivinder når skærmen bli
  .container {
     width: 100%;
  }  
+
+ .row {
+    padding-top: 50px;
+ }
+
+ h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+ }
+
+ .navbar-brand{
+    padding-left: 25px;
+ }
 
     #mobil-img img {
         width: 100%;   

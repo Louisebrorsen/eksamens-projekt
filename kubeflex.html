@@ -15,15 +15,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css"
     />
+    <link rel="icon" href="/img/Logo/A.png">
   </head>
   <body>
     <!-- Koden til navbaren starter her.  -->
-    <nav class="navbar bg-br tekst">
+    <nav class="navbar bg-br tekst navbar-expand-xxl">
       <div class="container-fluid">
         <!-- Her er afsnittet til logoet
         Logoet har en funktion, hvor den fungerer som et link til forsiden         
         -->
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.html" > 
           <img
             src="img/Logo/ajlogo.png"
             alt=""
@@ -38,12 +39,12 @@
           Farve er ændret med scss, hvor der er blevet tilføjet en variabel med den ønskede farve, som er blevet tilføjet til ul og li.
           Menu baren skal forsvinde ved en hvis skærm størrelse, og blive til en burger menu, som er lavet med en dropdown knap.
           -->
-          <ul class="nav justify-content-center mobil">
+          <ul class="nav justify-content-center mobil" style="padding-right: 25px;">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Forside</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#Calendar" >Dagens program</a>
+              <a class="nav-link" href="#Calendar" >Dagens program</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="arneJ.html">Arne Jacobsen</a>
@@ -56,7 +57,7 @@
             </li>
           </ul>
 
-        <!-- Søg og burger menu
+          <!-- Søg og burger menu
           Søg er lavet med en input type text, hvor der er blevet tilføjet en placeholder, og koden er fra bootstrap.
           Burger menuen er lavet med en dropdown knap, hvor der er blevet tilføjet en knap med en dropdown menu, hvor der er blevet tilføjet en liste med links til de forskellige sider.
           Dropdown menuens kode er fra bootstrap, hvor den er blebvet tilpasset så den passer til stil og design. Samt har de ønskede funktioner.
@@ -75,22 +76,27 @@
             >
               <span class="mdi mdi-menu" style="color: #f5f5f5; font-size: 30px;"></span>
             </button>
-            <ul class="dropdown-menu">
+            <!-- navbar links -->
+            <ul class="dropdown-menu ">
               <li><a class="dropdown-item" href="index.html">Forside</a></li>
               <li><a class="dropdown-item" href="index.html#Calendar">Dagens program</a></li>
               <li><a class="dropdown-item" href="arneJ.html">Arne Jacobsen</a></li>
               <li><a class="dropdown-item" href="kubeflex.html">Kubeflex</a></li>
               <li><a class="dropdown-item" href="omtrapholt.html">Om Trapholt</a></li>
               <li><a class="dropdown-item" href="#">Kontakt</a></li>
+              <div class="search">
+              <input type="text" placeholder="søg"  />
+              </div>
             </ul>
           </div>
 
-          <div class="search">
-            <input type="text" placeholder="søg"  />
+          <div class="search mobil" style="padding-right: 25px;">
+            <input type="text" placeholder="søg"/>
           </div>
         </div>
       </div>
     </nav>
+
 
     <!-- Her starter først afsnit, med en karusel
         Karusellen er lavet med bootstrap, hvor der er blevet tilføjet en caption til hver slide som beskriver billedet. Billederne er 
@@ -289,9 +295,9 @@
     <!-- Her starter footer -->
 
 
-    <div class="container-fluid " >
+    <div class="container-fluid ">
       <div class="row footer bg-hvid">
-        <div class="col-2">
+        <div class="col-12 col-md-2 s-tekst" id="mobil-tekst">
           <h5>Adresse</h5>
           <p>Æblehaven 23</p>
           <p>6000 Kolding</p>
@@ -300,7 +306,7 @@
           <p>Telefon: +45 76 30 05 30</p>
           <p>E-mail: kunstmuseum@trapholt.dk</p>
         </div>
-        <div class="col-2 justify-content-center">
+        <div class="col-12 col-md-2 s-tekst justify-content-center" id="mobil-tekst">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d564.9622168877278!2d9.5317638!3d55.5001588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c9f353340994b%3A0x6a51107558c12ebf!2sTrapholt!5e0!3m2!1sda!2sdk!4v1701557252206!5m2!1sda!2sdk"
             width="180px"
@@ -311,7 +317,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div class="col-2 sm">
+        <div class="col-12 col-md-2 s-tekst" id="mobil-tekst">
           <h5>Følg os</h5>
           <div class="footer-icons justify-content-center">
             <a href="https://www.facebook.com/trapholt.dk/"
@@ -338,7 +344,7 @@
             >
           </div>
         </div>
-        <div class="col-2">
+        <div class="col-12 col-md-2 s-tekst" id="mobil-tekst">
           <h5>Åbningstider</h5>
           <p>
             Mandag: <br />
@@ -353,7 +359,7 @@
             10.00 - 21.00
           </p>
         </div>
-        <div class="col-4 nyhed">
+        <div class="col-12 col-md-4 s-tekst nyhed justify-content-center" id="mobil-tekst" >
           <h5>Nyhedsbrev</h5>
           <input type="text" placeholder="Indtast din e-mail" />
           <button>Tilmeld</button>
@@ -368,20 +374,21 @@
     <!-- nederste del af footer -->
     <div class="container-fluid bg-hvid">
       <div class="row" style="padding-left: 35px;">
-        <div class="col-4">
+        <div class="col-12 col-md-4" id="mobil-tekst">
           <p>CVR: 11527132
             EAN/ GLN: 5790002745249</p>
         </div>
-        <div class="col-4 justify-content-center" style="padding-left: 30px;">
+        <div class="col-12 col-md-4 justify-content-center" id="mobil-tekst"> <!-- style="padding-left: 30px;"" -->
           <img class="img-fluid bund" src="Img/navimg/en-US-UK-2022.webp" alt="">
           <img class="img-fluid bund" src="Img/navimg/kolding-city-design.png" alt="">
           <img class="img-fluid bund" src="Img/navimg/Michelin_Sticker_GV_2019_Interessant_ny.webp" alt="">
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4" id="mobil-tekst">
           <p> © Trapholt 2021</p>
         </div>
       </div>
     </div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
