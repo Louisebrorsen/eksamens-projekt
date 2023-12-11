@@ -1,68 +1,5 @@
 @charset "UTF-8";
-/* Oversigten af hvor meget de forskellige .col fylder på siden. */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap");
-.col-1 {
-  width: 8.3333333333%;
-}
-
-.col-2 {
-  width: 16.6666666667%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.3333333333%;
-}
-
-.col-5 {
-  width: 41.6666666667%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.3333333333%;
-}
-
-.col-8 {
-  width: 66.6666666667%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.3333333333%;
-}
-
-.col-11 {
-  width: 91.6666666667%;
-}
-
-.col-12 {
-  width: 100%;
-}
-
-/* Denne gør at de elementer med mobil i deres klasser forsivinder når skærmen bliver mindre end 480px */
-@media all and (max-width: 480px) {
-  .mobil {
-    display: none;
-  }
-}
-/* 
-Denne gør at de elementer med web i deres klasser forsivinder når skærmen bliver større end 480px
-*/
-@media all and (min-width: 480px) {
-  .web {
-    display: none;
-  }
-}
 h1 {
   font-family: "Source Sans 3", sans-serif;
 }
@@ -147,6 +84,11 @@ body {
 
 .col-2.sm {
   padding-left: 25px;
+}
+
+.arne-img {
+  padding-top: 50px;
+  padding-left: 62px;
 }
 
 .footer {
@@ -252,4 +194,34 @@ h1 {
   border-radius: 5px;
   background-color: #917856;
   color: #f5f5f5;
+}
+
+/* Oversigten af hvor meget de forskellige .col fylder på siden. */
+/* Denne gør at de elementer med mobil i deres klasser forsivinder når skærmen bliver mindre end 480px */
+@media all and (max-width: 480px) {
+  .mobil {
+    display: none;
+  }
+  .arne-img {
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+  #arne-img img {
+    width: 100%;
+    max-height: 400px;
+  }
+}
+/* 
+Denne gør at de elementer med web i deres klasser forsivinder når skærmen bliver større end 480px
+*/
+@media all and (min-width: 480px) {
+  .web {
+    display: none;
+  }
+  #arne-img img {
+    width: 100%;
+    height: 580px;
+    padding-top: 20px;
+    padding-left: 65px;
+  }
 }/*# sourceMappingURL=style.css.map */
