@@ -6,7 +6,19 @@
     }
 }
 
+/* Denne gør at de elementer med mobil i deres klasser forsivinder når skærmen bliver mindre end 480px */
+@media all and (max-width: 480px) {
+    .mobil { display: none; }
+  }
 
+/* 
+Denne gør at de elementer med web i deres klasser forsivinder når skærmen bliver større end 480px
+*/
+@media all and (min-width: 480px) {
+    .web { display: none; }
+  }
+
+/* De forskellige baggrundsfarver til kasserne i de afsnit med tekst og billeder */
 .bg-br{
     background-color: #917856;
 }
@@ -38,8 +50,7 @@ body{
     background-color: #f5f5f5;
 }
 
-/* Den primære baggrundsfarve for headeren
-*/
+/* Den primære baggrundsfarve for headeren*/
 .navbar{
     background-color: #917856;
 
@@ -56,11 +67,6 @@ body{
     }
 }
 
-
-.hero-1{
-    display: flex;
-    max-height: 250px;
-}
 
 .row{
     padding: 20px;
@@ -160,3 +166,54 @@ hr {
     margin-bottom: 0.5rem;
 }
   
+
+#fullDiv {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; 
+    background-color: #f5f5f5;
+  }
+
+.card{
+    height:300px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font: 18px Helvetica;
+
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    float: left;
+    display: block;
+    width: 14.2857%;
+    text-align: center;
+    list-style-type: none;
+  }
+  
+  li:nth-child(n+1):nth-child(-n+7) {
+    font-weight: 900;
+    color: #917856;
+  }
+  
+  li:nth-child(n+39), li:nth-child(n+8):nth-child(-n+16) {
+    font-weight: 900;
+    color: rgba(0,0,0,.3);
+  }
+  
+  li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
+    border-radius: 5px;
+    background-color: #917856;
+    color: #f5f5f5;
+    }
+
+}

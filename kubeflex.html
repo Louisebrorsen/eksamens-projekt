@@ -38,7 +38,7 @@
           Farve er ændret med scss, hvor der er blevet tilføjet en variabel med den ønskede farve, som er blevet tilføjet til ul og li.
           Menu baren skal forsvinde ved en hvis skærm størrelse, og blive til en burger menu, som er lavet med en dropdown knap.
           -->
-          <ul class="nav justify-content-center">
+          <ul class="nav justify-content-center mobil">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Forside</a>
             </li>
@@ -66,7 +66,7 @@
           Så den kun er der når den er nødvendig, og ikke fylder unødvendigt, da den indeholder de samme links som menu baren.
           -->
         <div class="d-flex">
-          <div class="dropdown">
+          <div class="dropdown web">
             <button
               class="btn"
               type="button"
@@ -76,11 +76,11 @@
               <span class="mdi mdi-menu" style="color: #f5f5f5; font-size: 30px;"></span>
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Forside</a></li>
-              <li><a class="dropdown-item" href="#">Udstillinger</a></li>
-              <li><a class="dropdown-item" href="#">Kunstnere</a></li>
-              <li><a class="dropdown-item" href="#">Butik</a></li>
-              <li><a class="dropdown-item" href="#">Om Trapholt</a></li>
+              <li><a class="dropdown-item" href="index.html">Forside</a></li>
+              <li><a class="dropdown-item" href="index.html#Calendar">Dagens program</a></li>
+              <li><a class="dropdown-item" href="arneJ.html">Arne Jacobsen</a></li>
+              <li><a class="dropdown-item" href="kubeflex.html">Kubeflex</a></li>
+              <li><a class="dropdown-item" href="omtrapholt.html">Om Trapholt</a></li>
               <li><a class="dropdown-item" href="#">Kontakt</a></li>
             </ul>
           </div>

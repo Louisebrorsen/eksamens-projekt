@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css"
     />
+    <link rel="stylesheet" href="calendar.js">
   </head>
   <body>
     <!-- Koden til navbaren starter her.  -->
@@ -38,7 +39,7 @@
           Farve er ændret med scss, hvor der er blevet tilføjet en variabel med den ønskede farve, som er blevet tilføjet til ul og li.
           Menu baren skal forsvinde ved en hvis skærm størrelse, og blive til en burger menu, som er lavet med en dropdown knap.
           -->
-          <ul class="nav justify-content-center">
+          <ul class="nav justify-content-center mobil">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Forside</a>
             </li>
@@ -66,7 +67,7 @@
           Så den kun er der når den er nødvendig, og ikke fylder unødvendigt, da den indeholder de samme links som menu baren.
           -->
         <div class="d-flex">
-          <div class="dropdown">
+          <div class="dropdown web">
             <button
               class="btn"
               type="button"
@@ -76,11 +77,11 @@
               <span class="mdi mdi-menu" style="color: #f5f5f5; font-size: 30px;"></span>
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Forside</a></li>
-              <li><a class="dropdown-item" href="#">Udstillinger</a></li>
-              <li><a class="dropdown-item" href="#">Kunstnere</a></li>
-              <li><a class="dropdown-item" href="#">Butik</a></li>
-              <li><a class="dropdown-item" href="#">Om Trapholt</a></li>
+              <li><a class="dropdown-item" href="index.html">Forside</a></li>
+              <li><a class="dropdown-item" href="index.html#Calendar">Dagens program</a></li>
+              <li><a class="dropdown-item" href="arneJ.html">Arne Jacobsen</a></li>
+              <li><a class="dropdown-item" href="kubeflex.html">Kubeflex</a></li>
+              <li><a class="dropdown-item" href="omtrapholt.html">Om Trapholt</a></li>
               <li><a class="dropdown-item" href="#">Kontakt</a></li>
             </ul>
           </div>
@@ -237,11 +238,61 @@
       -->
     <div class="container-fluid" id="Calendar" style="padding-top: 250px;">
       <div class="row">
+        <h1>Dagens program</h1>
         <div class="col-5">
           <div class="card">
-            <div class="card-header">Calendar</div>
             <div class="card-body">
-              <div class="col-7">December</div>
+              <div class="col-7">
+                <!-- Kalanderen er hedder Fullscreen Flat Calendar og er fundet på https://www.sliderrevolution.com/resources/html-calendar/
+                Den er blevet tilpasset i Css filen, så den passer til designet med farver.
+                -->
+                <div id='fullDiv' >
+                  <ul>
+                    <li>SUN</li>
+                    <li>MON</li>
+                    <li>TUE</li>
+                    <li>WED</li>
+                    <li>THUR</li>
+                    <li>FRI</li>
+                    <li>SAT</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div> 
@@ -251,12 +302,12 @@
         <!--
           I dennne kolonne skal listen over dagsprogrammet for den valgte dato i kalenderen være.
          -->
-        <div class="col-7" style="color: black;">
-          <h1>Dagens program</h1>
+        <div class="col-7 s-tekst" >
+          <h1></h1>
           <div class="row">
             <ul class="list-group list-group-horizontal">
               <li class="list-group-item">
-                <img src="Img/logo.png" class="logo-li" alt="" />
+                <img src="Img/logo/trapholt.png" class="logo-li" alt="" />
               </li>
               <li class="list-group-item">
                 <a href="#">10:00</a>
