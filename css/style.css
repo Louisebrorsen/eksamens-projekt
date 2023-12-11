@@ -202,11 +202,11 @@ h1 {
   .mobil {
     display: none;
   }
-  .arne-img {
+  .mobil-img {
     padding-top: 10px;
     padding-left: 0px;
   }
-  #arne-img img {
+  #mobil-img img {
     width: 100%;
     max-height: 400px;
   }
@@ -218,7 +218,7 @@ Denne gør at de elementer med web i deres klasser forsivinder når skærmen bli
   .web {
     display: none;
   }
-  #arne-img img {
+  #mobil-img img {
     width: 100%;
     height: 580px;
     padding-top: 20px;
