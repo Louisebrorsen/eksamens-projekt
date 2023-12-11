@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Oversigten af hvor meget de forskellige .col fylder på siden. */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap");
 .col-1 {
   width: 8.3333333333%;
 }
@@ -62,6 +63,18 @@ Denne gør at de elementer med web i deres klasser forsivinder når skærmen bli
     display: none;
   }
 }
+h1 {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+h5 {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+p {
+  font-family: minion pro;
+}
+
 /* De forskellige baggrundsfarver til kasserne i de afsnit med tekst og billeder */
 .bg-br {
   background-color: #917856;
@@ -116,7 +129,7 @@ body {
 }
 
 .s-tekst {
-  color: #000;
+  color: #111;
 }
 
 .img img {
@@ -165,7 +178,7 @@ body {
 }
 .footer-icons a p {
   font-size: xx-small;
-  color: black;
+  color: #111;
   text-decoration: none;
   padding-right: 4px;
 }
@@ -214,6 +227,7 @@ h1 {
   margin: 0;
   padding: 0;
   font: 18px Helvetica;
+  border-color: none;
 }
 .card ul {
   margin: 0;
@@ -232,7 +246,7 @@ h1 {
 }
 .card li:nth-child(n+39), .card li:nth-child(n+8):nth-child(-n+16) {
   font-weight: 900;
-  color: rgba(0, 0, 0, 0.3);
+  color: #111;
 }
 .card li:hover:nth-child(n+8):nth-child(-n+38), .card li:nth-child(17) {
   border-radius: 5px;
