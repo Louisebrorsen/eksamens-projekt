@@ -214,6 +214,21 @@ h1 {
     height: 50% px;
     width: 50%;
   }
+  h1 {
+    color: #111;
+  }
+  p {
+    color: #111;
+  }
+  .container {
+    width: 100%;
+    background-color: #f5f5f5;
+  }
+  .row {
+    padding: 0px;
+    display: flex;
+    background-color: #f5f5f5;
+  }
 }
 /* 
 Denne gør at de elementer med web i deres klasser forsivinder når skærmen bliver større end 480px
@@ -221,6 +236,9 @@ Denne gør at de elementer med web i deres klasser forsivinder når skærmen bli
 @media all and (min-width: 480px) {
   .web {
     display: none;
+  }
+  .container {
+    width: 100%;
   }
   #mobil-img img {
     width: 100%;
