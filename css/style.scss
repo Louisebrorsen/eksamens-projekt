@@ -79,7 +79,7 @@ body{
 }
 
 .s-tekst{
-    color: #000;
+    color: #111;
 }
 
 .img{
@@ -131,7 +131,7 @@ body{
          text-align: center;
     p{
         font-size: xx-small;
-        color: black;
+        color: #111;
         text-decoration: none; 
         padding-right: 4px;   
     }       
@@ -185,6 +185,7 @@ hr {
   margin: 0;
   padding: 0;
   font: 18px Helvetica;
+  border-color: none;
 
 
   ul {
@@ -207,7 +208,7 @@ hr {
   
   li:nth-child(n+39), li:nth-child(n+8):nth-child(-n+16) {
     font-weight: 900;
-    color: rgba(0,0,0,.3);
+    color: #111;
   }
   
   li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
