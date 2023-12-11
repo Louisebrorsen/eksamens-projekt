@@ -210,6 +210,10 @@ h1 {
     width: 100%;
     max-height: 400px;
   }
+  .logo-li {
+    height: 50% px;
+    width: 50%;
+  }
 }
 /* 
 Denne gør at de elementer med web i deres klasser forsivinder når skærmen bliver større end 480px
