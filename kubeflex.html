@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Koden til navbaren starter her.  -->
-    <nav class="navbar bg-br tekst navbar-expand-xxl">
+    <nav class="navbar bg-br tekst navbar-expand-xxl bg-br">
       <div class="container-fluid">
         <!-- Her er afsnittet til logoet
         Logoet har en funktion, hvor den fungerer som et link til forsiden         
@@ -33,18 +33,13 @@
             class="d-inline-block align-text-top"
           />
         </a>
-        <!-- Menu bar 
-          Her er menu baren, som er lavet med en ul liste, hvor der er blevet tilføjet en li med en a tag, som er blevet tilføjet en href, som linker til de forskellige sider.
-          Koden er fra bootstrap, hvor den er blevet tilpasset så den passer til stil og design. Samt har de ønskede funktioner.
-          Farve er ændret med scss, hvor der er blevet tilføjet en variabel med den ønskede farve, som er blevet tilføjet til ul og li.
-          Menu baren skal forsvinde ved en hvis skærm størrelse, og blive til en burger menu, som er lavet med en dropdown knap.
-          -->
+        <!-- Menu bar -->
           <ul class="nav justify-content-center mobil" style="padding-right: 25px;">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Forside</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Calendar" >Dagens program</a>
+              <a class="nav-link" href="index.html#Calendar">Dagens program</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="arneJ.html">Arne Jacobsen</a>
@@ -57,15 +52,7 @@
             </li>
           </ul>
 
-          <!-- Søg og burger menu
-          Søg er lavet med en input type text, hvor der er blevet tilføjet en placeholder, og koden er fra bootstrap.
-          Burger menuen er lavet med en dropdown knap, hvor der er blevet tilføjet en knap med en dropdown menu, hvor der er blevet tilføjet en liste med links til de forskellige sider.
-          Dropdown menuens kode er fra bootstrap, hvor den er blebvet tilpasset så den passer til stil og design. Samt har de ønskede funktioner.
-          Denne første udgave er endnu ikke helt tilpasset, der ønskes at søge funktionen har en span icon, som udvider sig ved hoover eller der bliver trykket.
-          Burger menuen skal også have en span icon, som udvider sig ved hoover eller der bliver trykket. 
-          Vi har et ønske om at burgermenuen kun skal være der når skærmen er mindre end 768px, og at den skal være skjult når skærmen er større end 768px. 
-          Så den kun er der når den er nødvendig, og ikke fylder unødvendigt, da den indeholder de samme links som menu baren.
-          -->
+          <!-- Søg og burger menu -->
         <div class="d-flex">
           <div class="dropdown web">
             <button
@@ -77,13 +64,12 @@
               <span class="mdi mdi-menu" style="color: #f5f5f5; font-size: 30px;"></span>
             </button>
             <!-- navbar links -->
-            <ul class="dropdown-menu ">
+            <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="index.html">Forside</a></li>
               <li><a class="dropdown-item" href="index.html#Calendar">Dagens program</a></li>
               <li><a class="dropdown-item" href="arneJ.html">Arne Jacobsen</a></li>
               <li><a class="dropdown-item" href="kubeflex.html">Kubeflex</a></li>
               <li><a class="dropdown-item" href="omtrapholt.html">Om Trapholt</a></li>
-              <li><a class="dropdown-item" href="#">Kontakt</a></li>
               <div class="search">
               <input type="text" placeholder="søg"  />
               </div>
@@ -98,22 +84,12 @@
     </nav>
 
 
-    <!-- Her starter først afsnit, med en karusel
-        Karusellen er lavet med bootstrap, hvor der er blevet tilføjet en caption til hver slide som beskriver billedet. Billederne er 
-        lavet i photoshop, hvor der er justeret størrelsen så de passer til karusellen og så de har samme størrelse.
-        Under starter koden som viser logoet på siden af karusellen. I dennne udgave er det ikke tilpasset, så det passer til designet.
-        -->
+    <!-- Her starter først afsnit, med en karrusel -->
 
     <div class="container-fluid" style="padding-bottom: 20px;">
       <div class="row">
         
-        <!-- Her starter koden til karusellen.
-        Den er lavet med bootstrap, hvor der er blevet tilføjet en caption til hver slide som beskriver billedet. 
-        Den er opsat ved at have 3 billeder, hvor den første er sat til active, så den starter med at vise det første billede.
-        I koden er der til at indsætte ønskede billede ved img src, og den har også en alt tekst, hvis billedet ikke kan vises.
-        Derudover er der beskrivelses bokse til at kunne tilføje tekst til billederne, som er blevet tilføjet i hver slide.
-        h5 er en headline som skal give en overordnet beskrivelse af billedet, og p er en paragraph som skal give en mere detaljeret beskrivelse af billedet.
-        -->
+        <!-- Her starter koden til karrusellen -->
           <div
             id="carouselExampleCaptions"
             class="carousel slide"
@@ -146,12 +122,12 @@
                 <img
                   src="Img/kubeflex/Billed causel 2.1.png"
                   class="d-block w-100"
-                  alt="..."
+                  alt="Kubeflex stående i den flotte natur"
                 />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
+                <div class="carousel-caption d-none d-md-block mobil">
+                  <h5>Den eneste</h5>
                   <p>
-                    Some representative placeholder content for the first slide.
+                    Kubeflex stående i den flotte natur.
                   </p>
                 </div>
               </div>
@@ -159,28 +135,28 @@
                 <img
                   src="img/kubeflex/Billed causel 2.2.png"
                   class="d-block w-100"
-                  alt="..."
+                  alt="Toilettet"
                 />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
+                <div class="carousel-caption d-none d-md-block mobil">
+                  <h5>Toilettet</h5>
                   <p>
-                    Some representative placeholder content for the second
-                    slide.
+                    Lille og simpelt, men hyggeligt.
                   </p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="img/kubeflex/Billed causel 2.3.png" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
+                <img src="img/kubeflex/Billed causel 2.3.png" class="d-block w-100" alt="stuen " />
+                <div class="carousel-caption d-none d-md-block mobil">
+                  <h5>Stuen</h5>
                   <p>
-                    Some representative placeholder content for the third slide.
+                    Stedet hvor hyggen skulle ske.
                   </p>
                 </div>
               </div>
             </div>
             <!-- Dettte er koden fra bootstrap der går at karusel funktionen fungerer. 
-                Den gør at når pilene bliver trykket eller når der er gået en hvis tid skifter til næste. -->
+            Den gør at når pilene bliver trykket eller når der er gået en hvis tid skifter til næste. 
+            -->
             <button
               class="carousel-control-prev"
               type="button"
@@ -209,19 +185,12 @@
         </div>
       </div>
     </div>
-    <!-- Andet afsnit indeholder tekst og billede.
-      De er opdelt i col-5 og col-7, hvor col-5 er til venstre og col-7 er til højre. Dette er gjort for at få det til at passe med designet fra XD.
-      Teksten er lavet med en h1 tag, som er en headline, og en p tag, som er en paragraph.
-      Billedet er lavet med en img tag, hvor der er blevet tilføjet en src, som linker til billedet, og en alt tekst, hvis billedet ikke kan vises.
-      Det er opdelt i col for at tilpasse det til designet fra XD, hvor col-5 giver teksten lov til at fylde mindre og col-7 giver billedet lov til at fylde mere.
-      Man kan se opdelingen af % af de forskellige col elementer i css filen.
-      Vi har lavet en farvet boks som er lavet med en div tag, hvor der er blevet tilføjet en class, som er blevet tilføjet til css filen.
-      Den har fået en bestemt højde og bredde, så den passer til designet fra XD, så den ikke fylder det hele og giver et æstetisk udtryk.
-      -->
+
+    <!-- Afsnit tekst omkring historien om kubeflex-->
     <div class="container-fluid s-tekst">
-      <div class="row" style="height: 200px;">
-       <div class="col-12">
-        <h1>
+      <div class="row" >
+        <div class="col-12 col-md-12 s-tekst" id="mobil-tekst">
+          <h1 class="text-break">
             En topattraktion for det design- og arkitekturinteresserede publikum
         </h1>
         <p>
@@ -234,9 +203,10 @@
       </div>
     </div>
 
+    <!-- Afsnit tekst familen og kubeflex-->
     <div class="container-fluid s-tekst">
-        <div class="row" style="height: 200px;">
-         <div class="col-12">
+        <div class="row">
+         <div class="col-12 col-md-12 s-tekst" id="mobil-tekst">
           <h1>
             Jacobsen-familiens sommerhus
         </h1>
@@ -250,31 +220,34 @@
 
 
 
-    <!-- Afsnit med uddrag af Nanna Ditzel.
-      Dette afsnit indeholder tekst og billede som er opdelt i col-5 og col-7, hvor col-5 er til venstre og col-7 er til højre.
-      I col-5 er der indsat en h1 tag, som er en headline, og en p tag, som er en paragraph.      
-      Vi har lavet en farvet boks som er lavet med en div tag, hvor der er blevet tilføjet en class, som er blevet tilføjet til css filen.
-      Den har fået en bestemt højde, så den passer til designet fra XD, så den ikke fylder det hele og giver et æstetisk udtryk.
- -->
-   <div class="container-fluid s-tekst" style="padding-bottom: 100px;">
+    <!-- Afsnit kubeflex sommerhus -->
+   <div class="container-fluid s-tekst">
     <div class="row bg-g" enter-class="fixed-bottom">
-      <div class="col-9" style="padding-top: 20px; padding-bottom: 20px; padding-left: 20px;">
-        <img src="img/kubeflex/Billede 1.png" height="auto" width="850" alt="Billed potræt af Nanna Ditzel, hvor hendes stole indgår">
+      <div class="col-12 col-md-8 tekst" id="mobil-img" >
+        <img src="img/kubeflex/Billede 1.png" height="auto" width="850" alt="Billed af kubeflex">
       </div>
-      <div class="col-3" style="padding-top: 15px; padding-right: 20px; color: black;">
+      <div class="col-12 col-md-4 tekst" id="mobil-tekst" style="padding-top: 15px; padding-right: 20px;">
         <h1>
           SOMMERHUSET
         </h1>
         <p>
-            Med Arne Jacobsens sommerhus har Trapholt fået en enestående mulighed for at vise Arne Jacobsen design i et hus tegnet af mesteren selv. Der er interiør med spise- og opholdstue og eksempler på Arne Jacobsens øvrige design, bl.a. armaturlinjen Vola og serveringsserien Cylinda Line. Der venter publikum en unik totaloplevelse af den internationalt anerkendte arkitekt, der smukt supplerer museets store møbelsamling af danske arkitekter og designere.
+          Med Arne Jacobsens sommerhus har Trapholt fået en enestående mulighed for at vise Arne Jacobsen design i et hus tegnet af mesteren selv. Der er interiør med spise- og opholdstue og eksempler på Arne Jacobsens øvrige design, bl.a. armaturlinjen Vola og serveringsserien Cylinda Line. Der venter publikum en unik totaloplevelse af den internationalt anerkendte arkitekt, der smukt supplerer museets store møbelsamling af danske arkitekter og designere.
         </p>
       </div>
     </div>
    </div>
 
+   <div class="container-fluid mobil">
+    <div class="row">
+      <div class="col-12 fylde2">
+      </div>
+    </div>
+  </div>
+
+    <!-- Afsnit historie kubeflex -->
    <div class="container-fluid " style="padding-bottom: 200px;">
     <div class="row bg-mg" style="height: 500px;" enter-class="fixed-bottom">
-      <div class="col-5 s-tekst" style="padding-top: 60px; ">
+      <div class="col-12 col-md-5 tekst" id="mobil-tekst" style="padding-top: 60px; ">
         <h1>
             Det banebrydende bidrag         
         </h1>
@@ -282,14 +255,14 @@
             Kubeflex var et banebrydende bidrag til datidens ultimative og fleksible arkitektur. Bevaret på Trapholt vil Kubeflex fortsat kunne inspirere, forundre og glæde gæster fra hele verden mange år frem. Trapholt arrangerer dagligt guidede ture i Kubeflex, som er gratis, når entreen er betalt.
         </p>
       </div>
-      <div class="col-7" style="padding-top: 50px; padding-left: 62px;">
-        <img src="img/kubeflex/DSC06735.jpg" height="auto" width="700" alt="Billed potræt af Nanna Ditzel, hvor hendes stole indgår">
+      <div class="col-12 col-md-7 tekst" id="mobil-img" style="padding-top: 50px; padding-left: 62px;">
+        <img src="img/kubeflex/DSC06735.jpg" height="auto" width="700" alt="Billed af Selma og Lea i ægget">
       </div>
     </div>
    </div>
 
 
-
+   <!-- Linje der adskiller indhold og footer -->
    <hr>
 
     <!-- Her starter footer -->

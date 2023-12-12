@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title> Arne Jacobsen</title>
+    <title>Trapholt</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,36 +15,36 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css"
     />
-    <link rel="icon" href="/img/Logo/T.png">
+    <link rel="icon" href="/img/Logo/A.png" />
   </head>
+
   <body>
-   <!-- Koden til navbaren starter her.  -->
-   <nav class="navbar bg-br tekst navbar-expand-xxl">
-    <div class="container-fluid">
-      <!-- Her er afsnittet til logoet
-      Logoet har en funktion, hvor den fungerer som et link til forsiden         
-      -->
-      <a class="navbar-brand" href="index.html" > 
-        <img
-          src="img/Logo/trapholt.png"
-          alt=""
-          width=""
-          height="100"
-          class="d-inline-block align-text-top"
-        />
-      </a>
-      <!-- Menu bar 
-        Her er menu baren, som er lavet med en ul liste, hvor der er blevet tilføjet en li med en a tag, som er blevet tilføjet en href, som linker til de forskellige sider.
-        Koden er fra bootstrap, hvor den er blevet tilpasset så den passer til stil og design. Samt har de ønskede funktioner.
-        Farve er ændret med scss, hvor der er blevet tilføjet en variabel med den ønskede farve, som er blevet tilføjet til ul og li.
-        Menu baren skal forsvinde ved en hvis skærm størrelse, og blive til en burger menu, som er lavet med en dropdown knap.
+    <!-- Koden til navbaren starter her.  -->
+    <nav class="navbar bg-br tekst navbar-expand-xxl bg-br">
+      <div class="container-fluid">
+        <!-- Her er afsnittet til logoet
+        Logoet har en funktion, hvor den fungerer som et link til forsiden         
         -->
-        <ul class="nav justify-content-center mobil" style="padding-right: 25px;">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="img/Logo/ajlogo.png"
+            alt=""
+            width=""
+            height="100"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <!-- Menu bar -->
+        <ul
+          class="nav justify-content-center mobil"
+          style="padding-right: 25px"
+        >
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Forside</a>
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Forside</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Calendar" >Dagens program</a>
+            <a class="nav-link" href="index.html#Calendar">Dagens program</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="arneJ.html">Arne Jacobsen</a>
@@ -57,110 +57,173 @@
           </li>
         </ul>
 
-        <!-- Søg og burger menu
-        Søg er lavet med en input type text, hvor der er blevet tilføjet en placeholder, og koden er fra bootstrap.
-        Burger menuen er lavet med en dropdown knap, hvor der er blevet tilføjet en knap med en dropdown menu, hvor der er blevet tilføjet en liste med links til de forskellige sider.
-        Dropdown menuens kode er fra bootstrap, hvor den er blebvet tilpasset så den passer til stil og design. Samt har de ønskede funktioner.
-        Denne første udgave er endnu ikke helt tilpasset, der ønskes at søge funktionen har en span icon, som udvider sig ved hoover eller der bliver trykket.
-        Burger menuen skal også have en span icon, som udvider sig ved hoover eller der bliver trykket. 
-        Vi har et ønske om at burgermenuen kun skal være der når skærmen er mindre end 768px, og at den skal være skjult når skærmen er større end 768px. 
-        Så den kun er der når den er nødvendig, og ikke fylder unødvendigt, da den indeholder de samme links som menu baren.
-        -->
-      <div class="d-flex">
-        <div class="dropdown web">
-          <button
-            class="btn"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <span class="mdi mdi-menu" style="color: #f5f5f5; font-size: 30px;"></span>
-          </button>
-          <!-- navbar links -->
-          <ul class="dropdown-menu ">
-            <li><a class="dropdown-item" href="index.html">Forside</a></li>
-            <li><a class="dropdown-item" href="index.html#Calendar">Dagens program</a></li>
-            <li><a class="dropdown-item" href="arneJ.html">Arne Jacobsen</a></li>
-            <li><a class="dropdown-item" href="kubeflex.html">Kubeflex</a></li>
-            <li><a class="dropdown-item" href="omtrapholt.html">Om Trapholt</a></li>
-            <li><a class="dropdown-item" href="#">Kontakt</a></li>
-            <div class="search">
-            <input type="text" placeholder="søg"  />
-            </div>
-          </ul>
-        </div>
+        <!-- Søg og burger menu -->
+        <div class="d-flex">
+          <div class="dropdown web">
+            <button
+              class="btn"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span
+                class="mdi mdi-menu"
+                style="color: #f5f5f5; font-size: 30px"
+              ></span>
+            </button>
+            <!-- navbar links -->
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="index.html">Forside</a></li>
+              <li>
+                <a class="dropdown-item" href="index.html#Calendar"
+                  >Dagens program</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="arneJ.html">Arne Jacobsen</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="kubeflex.html">Kubeflex</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="omtrapholt.html">Om Trapholt</a>
+              </li>
+              <div class="search">
+                <input type="text" placeholder="søg" />
+              </div>
+            </ul>
+          </div>
 
-        <div class="search mobil" style="padding-right: 25px;">
-          <input type="text" placeholder="søg"/>
+          <div class="search mobil" style="padding-right: 25px">
+            <input type="text" placeholder="søg" />
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-
-
-    <!-- Her starter indholdet på siden 
-    Dette afsnit indeholder billedet af trapholt fra fugleperspektiv, billedet er placeret i toppen af siden, hvor karusellen på forsiden er.
-    Billedet er lavet med en img tag, hvor der er blevet tilføjet en src, som linker til billedet, og en alt tekst, hvis billedet ikke kan vises.
-    Billedes højde er på 700 og er placeret i en container-fluid, som er en bootstrap klasse, som gør at billedet fylder hele siden.
-    -->
-    <div class="container-fluid" style="padding-bottom: 50px;">
+    </nav>
+    <!-- Afsnit med fuld billede af trapholt fra fugleperspektiv -->
+    <div class="container-fluid" style="padding-bottom: 10px">
       <div class="row">
-        <img src="img/omtrapholt/Billede 3.1.png" class="img-fluid"  height="700" alt="Billede af ægget" />
+        <img
+          src="img/omtrapholt/Billede 3.1.png"
+          height="700"
+          class="img-fluid"
+          alt="Fulgleperspektiv af Trapholt"
+        />
       </div>
     </div>
 
-
-    
-    <!-- Her starter teksten om Arne Jacobsen
-    Dette afsnit indeholder teksten om Arne Jacobsen, hvor der er blevet tilføjet en h1 tag, som indeholder overskriften, og en p tag, som indeholder teksten.
-    Teksten er placeret i en container-fluid, som er en bootstrap klasse, som gør at teksten fylder hele siden.
-    -->
-
-    <div class="container-fluid" style="padding-bottom: 400px;">
-      <div class="row bg-mb" style="height: 500px;" enter-class="fixed-bottom">
-        <div class="col-7" style="padding-top: 50px; padding-left: 62px;">
-          <img src="img/omtrapholt/villa-trapholt-beskaaret.png" height="auto" width="auto" alt="Billede af oprindelige villa før ombygning ca. år 1930">
-        </div>
-        <div class="col-5" style="padding-top: 60px; color: #f5f5f5;">
-          <h1>
-            
-          </h1>
+    <!-- Afsnit historien om Trapholt -->
+    <div class="container-fluid s-tekst">
+      <div class="row">
+        <div class="col-11 col-md-11 s-tekst" id="mobil-tekst">
+          <h1 class="text-break">Trapholts historie</h1>
           <p>
-            
+            Historien om Trapholt går tilbage til 1930erne, hvor Gustav Lind, en
+            dansk tandlæge med praksis i Amsterdam, og hans kone købte store
+            arealer af Strandhuse-området ved det smukke Kolding Fjord. Her
+            byggede de en arkitekttegnet sommerresidens, tegnet af den
+            hollandske arkitekt A. P. Smits, og anlagde en stor æbleplantage og
+            en smuk have tegnet af C. Th. Sørensen.
+
+            <br />Under 2. verdenskrig flyttede parret tilbage til Danmark og
+            sommerresidensen blev i 1945 ombygget til helårsbolig og fungerede
+            som ægteparrets hjem i mange år. <br />Da Gustav og Helene Lind kom
+            op i årene ville de sikre, at de mange tønder land i fremtiden
+            skulle tilgængeliggøres for folket. Derfor oprettede de i 1972
+            Trapholtfonden og forærede Kolding Kommune de mange tønder land. Til
+            gengæld forpligtede kommunen sig til at oprette et kunstmuseum på
+            Trapholt. <br />Den 2. juni 1988 kunne man åbne de smukke
+            museumsbygninger tegnet af arkitekterne Boje Lundgaard og Bente
+            Aude. Grundstenen i samlingen var oprindeligt Kolding Kunstforenings
+            værker. <br />I dag råder Trapholt over en samling på ikke mindre
+            end 7000 værker. Derfor har museets status af at være et
+            statsanerkendt museum, som modtager statstilskud til at indsamle,
+            registrere, bevare, forske og formidle museets samlinger.
           </p>
         </div>
       </div>
-     </div>
+    </div>
 
-     <div class="container-fluid" style="padding-bottom: 50px;">
+    <!-- Afsnit med tekst og billede af villa før ombygning -->
+    <div class="container-fluid s-tekst">
+      <div class="row bg-mb" enter-class="fixed-bottom">
+        <div class="col-12 col-md-12 tekst" id="mobil-img">
+          <div class="imgpad">
+            <!-- Canter tag gør billede og tekst er centreret - den er ikke aktuel på mobil tilstand -->
+            <center>
+              <img
+                src="img/omtrapholt/villa-trapholt-beskaaret.png"
+                height="auto"
+                width="850"
+                style="padding-left: 0"
+                alt="Billede af villa før ombygningen"
+              />
+            </center>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-12 tekst"
+          id="mobil-tekst"
+          style="padding-top: 15px; padding-right: 20px"
+        >
+          <div class="mobilcenter mobil">
+            <center>
+              <h1>Den oprindelige villa før ombygningen</h1>
+            </center>
+          </div>
+          <div class="mobilcenter web">
+            <h1>Den oprindelige villa før ombygningen</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <!-- Et fylde afsnit for at få afstand mellem afsnit i mobil tilstand -->
+    <div class="container-fluid mobil">
       <div class="row">
-        <img src="img/general side aj/Billede 2.3.jpg" height="700" alt="Billede af ægget" />
+        <div class="col-12 fylde"></div>
+      </div>
+    </div>
+    <!-- Afsnit omkring villa efter ombygning -->
+    <div class="container-fluid">
+      <div class="row bg-mbl" style="height: 500px" enter-class="fixed-bottom">
+        <div
+          class="col-12 col-md-5 tekst"
+          id="mobil-tekst"
+          style="padding-top: 60px"
+        >
+          <h1 class="text-break">
+            Villaen efter ombygningen som i dag huser Trapholts administration
+          </h1>
+        </div>
+        <div
+          class="col-12 col-md-7 tekst"
+          id="mobil-img"
+        >
+          <img
+            src="img/omtrapholt/Villa.png"
+            height="auto"
+            width="700"
+            alt="Billed af villa efter ombygningen"
+          />
+        </div>
       </div>
     </div>
 
-
-    <div class="container-fluid" style="padding-bottom: 400px;">
-      <div class="row bg-b" style="height: 500px;" enter-class="fixed-bottom">
-        <div class="col-5" style="padding-top: 60px; color: #f5f5f5;">
-          <h1>
-            
-          </h1>
-          <p>
-            
-          </p>
-        </div>
-        <div class="col-7" style="padding-top: 50px; padding-left: 62px;">
-          <img src="img/general side aj/Billede 2.4.jpg" height="auto" width="700" alt="Billede af kunstinstallation Things Matter">
+    <!-- Et fylde afsnit for at få afstand mellem afsnit i mobil tilstand -->
+    <div class="container-fluid mobil">
+      <div class="row">
+        <div class="col-12 fylde4">
         </div>
       </div>
-     </div>
+    </div>
 
-   <hr>
-
+    <!-- Linje der adskiller indhold og footer -->
+    <hr>
 
     <!-- Her starter footer -->
 
-    <div class="container-fluid ">
+    <div class="container-fluid">
       <div class="row footer bg-hvid">
         <div class="col-12 col-md-2 s-tekst" id="mobil-tekst">
           <h5>Adresse</h5>
@@ -171,7 +234,10 @@
           <p>Telefon: +45 76 30 05 30</p>
           <p>E-mail: kunstmuseum@trapholt.dk</p>
         </div>
-        <div class="col-12 col-md-2 s-tekst justify-content-center" id="mobil-tekst">
+        <div
+          class="col-12 col-md-2 s-tekst justify-content-center"
+          id="mobil-tekst"
+        >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d564.9622168877278!2d9.5317638!3d55.5001588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c9f353340994b%3A0x6a51107558c12ebf!2sTrapholt!5e0!3m2!1sda!2sdk!4v1701557252206!5m2!1sda!2sdk"
             width="180px"
@@ -224,7 +290,10 @@
             10.00 - 21.00
           </p>
         </div>
-        <div class="col-12 col-md-4 s-tekst nyhed justify-content-center" id="mobil-tekst" >
+        <div
+          class="col-12 col-md-4 s-tekst nyhed justify-content-center"
+          id="mobil-tekst"
+        >
           <h5>Nyhedsbrev</h5>
           <input type="text" placeholder="Indtast din e-mail" />
           <button>Tilmeld</button>
@@ -238,22 +307,32 @@
 
     <!-- nederste del af footer -->
     <div class="container-fluid bg-hvid">
-      <div class="row" style="padding-left: 35px;">
+      <div class="row" style="padding-left: 35px">
         <div class="col-12 col-md-4" id="mobil-tekst">
-          <p>CVR: 11527132
-            EAN/ GLN: 5790002745249</p>
+          <p>CVR: 11527132 EAN/ GLN: 5790002745249</p>
         </div>
-        <div class="col-12 col-md-4 justify-content-center" id="mobil-tekst"> <!-- style="padding-left: 30px;"" -->
-          <img class="img-fluid bund" src="Img/navimg/en-US-UK-2022.webp" alt="">
-          <img class="img-fluid bund" src="Img/navimg/kolding-city-design.png" alt="">
-          <img class="img-fluid bund" src="Img/navimg/Michelin_Sticker_GV_2019_Interessant_ny.webp" alt="">
+        <div class="col-12 col-md-4 justify-content-center" id="mobil-tekst">
+          <img
+            class="img-fluid bund"
+            src="Img/navimg/en-US-UK-2022.webp"
+            alt=""
+          />
+          <img
+            class="img-fluid bund"
+            src="Img/navimg/kolding-city-design.png"
+            alt=""
+          />
+          <img
+            class="img-fluid bund"
+            src="Img/navimg/Michelin_Sticker_GV_2019_Interessant_ny.webp"
+            alt=""
+          />
         </div>
         <div class="col-12 col-md-4" id="mobil-tekst">
-          <p> © Trapholt 2021</p>
+          <p>© Trapholt 2021</p>
         </div>
       </div>
     </div>
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

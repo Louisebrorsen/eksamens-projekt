@@ -16,6 +16,11 @@ p{
 }
 
 /* De forskellige baggrundsfarver til kasserne i de afsnit med tekst og billeder */
+.bg-h{
+    background-color: #f5f5f5;
+
+}
+
 .bg-br{
     background-color: #917856;
 }
@@ -42,16 +47,12 @@ p{
 }
 
 
+
 /* Den primære baggrundsfarve for hjemmesiden og undersiderne */
 body{
     background-color: #f5f5f5;
 }
 
-/* Den primære baggrundsfarve for headeren*/
-.navbar{
-    background-color: #917856;
-
-} 
 
 /* Ændringen af fareven på teksten i navbaren. */
 .nav-link{
@@ -157,10 +158,10 @@ body{
 }
 
 hr {
-    border-top: 2px solid #917856;  /* Farve forslag så det passer en smule bedre, tage den mørke blå, der giver en fornemmelse af grå */
-  }
+    border-top: 2px solid #917856;   
+}
 
-  h1{
+h1{
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.2;
@@ -221,6 +222,20 @@ hr {
 
 }
 
+.imgpad{
+    .img{
+        padding: 0;
+    }
+}
+
+#fullDiv {
+    padding-top: 50px; 
+    padding-left: 0px;
+    padding-bottom: 50px;
+}
+
+
+
 
 /* Oversigten af hvor meget de forskellige .col fylder på siden. */
 // @for $i from 1 through 12 {   
@@ -235,14 +250,13 @@ hr {
     .mobil-img {
         padding-top: 10px; 
         padding-left: 0px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 
     #mobil-img img {
         width: 100%;
         max-height:400px;
-       
-   
+       padding-bottom: 40px;
     }   
 
     #mobil-tekst{
@@ -262,9 +276,9 @@ hr {
 
         
     }
-    .container {
+    .container-fluid {
         width: 100%;
-        padding-bottom: 50px;
+        padding-bottom: 10px;
     }
 
     .logo-li{
@@ -280,17 +294,39 @@ hr {
         color: #111;
     }
 
-    .container-fluid {
-        width: 100%;
+    h4{
+        color: #111;
     }
 
+    
     .row {
         display: flex;
         background-color: #f5f5f5;
+        padding-block-end: 20px;
     }
 
     .dropdown {
         color: #111;
+    }
+
+    .fylde {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .fylde2 {
+        padding-top: 20px;
+        padding-bottom: 350px;
+    }
+
+    .fylde3 {
+        padding-top: 20px;
+        padding-bottom: 150px;
+    }
+
+    .fylde4 {
+        padding-top: 1000px;
+        padding-bottom: 400px;
     }
    
   }
@@ -306,7 +342,8 @@ Denne gør at de elementer med web i deres klasser forsivinder når skærmen bli
  }  
 
  .row {
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
  }
 
  h1{
@@ -324,4 +361,6 @@ Denne gør at de elementer med web i deres klasser forsivinder når skærmen bli
         padding-top: 20px;
         padding-left:65px;
     } 
+
+   
 }
