@@ -12,7 +12,6 @@ p {
   font-family: minion pro;
 }
 
-/* De forskellige baggrundsfarver til kasserne i de afsnit med tekst og billeder */
 .bg-h {
   background-color: #f5f5f5;
 }
@@ -41,12 +40,10 @@ p {
   background-color: #869053;
 }
 
-/* Den primære baggrundsfarve for hjemmesiden og undersiderne */
 body {
   background-color: #f5f5f5;
 }
 
-/* Ændringen af fareven på teksten i navbaren. */
 .nav-link {
   color: #f5f5f5;
 }
@@ -90,16 +87,7 @@ body {
   padding-left: 62px;
 }
 
-.footer {
-  padding-top: 20px;
-  border-top-style: solid 10px #917856;
-}
-.footer p {
-  font-size: small;
-  margin: 0%;
-}
-
-.footer-icons {
+.f-icons {
   width: 135px;
   display: flex;
   flex-wrap: wrap;
@@ -107,21 +95,43 @@ body {
   align-content: center;
   padding-top: 10px;
 }
-.footer-icons img {
+.f-icons img {
   width: 40px;
   height: 40px;
   padding: 5px;
 }
-.footer-icons a {
+.f-icons a {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.footer-icons a p {
+.f-icons a p {
   font-size: xx-small;
   color: #111;
   text-decoration: none;
   padding-right: 4px;
+  margin: 0; /* Reset margin for paragraphs */
+}
+
+.row-f {
+  padding-top: 20 px;
+  padding-bottom: 20px;
+  display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+}
+.footer p {
+  font-size: small;
+  margin: 0;
 }
 
 .col-4.nyhed p {
@@ -130,6 +140,7 @@ body {
 
 .img-fit {
   width: 100%;
+  max-width: 950px;
   height: auto;
 }
 
@@ -206,7 +217,6 @@ h1 {
 }
 
 /* Oversigten af hvor meget de forskellige .col fylder på siden. */
-/* Denne gør at de elementer med mobil i deres klasser forsivinder når skærmen bliver mindre end 480px */
 @media all and (max-width: 480px) {
   .mobil {
     display: none;
@@ -290,6 +300,9 @@ Denne gør at de elementer med web i deres klasser forsivinder når skærmen bli
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .extra {
+    padding-top: 80px;
+  }
   h1 {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -298,9 +311,25 @@ Denne gør at de elementer med web i deres klasser forsivinder når skærmen bli
     padding-left: 25px;
   }
   #mobil-img img {
-    width: 100%;
+    width: auto;
     height: 580px;
     padding-top: 20px;
     padding-left: 65px;
+  }
+  .fylde {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .fylde2 {
+    padding-top: 20px;
+    padding-bottom: 350px;
+  }
+  .fylde3 {
+    padding-top: 20px;
+    padding-bottom: 150px;
+  }
+  .fylde4 {
+    padding-top: 1000px;
+    padding-bottom: 400px;
   }
 }/*# sourceMappingURL=style.css.map */

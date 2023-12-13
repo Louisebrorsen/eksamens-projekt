@@ -153,8 +153,7 @@
             <center>
               <img
                 src="img/omtrapholt/villa-trapholt-beskaaret.png"
-                height="auto"
-                width="850"
+                class="img-fluid"
                 style="padding-left: 0"
                 alt="Billede af villa før ombygningen"
               />
@@ -188,7 +187,7 @@
     <div class="container-fluid">
       <div class="row bg-mbl" style="height: 500px" enter-class="fixed-bottom">
         <div
-          class="col-12 col-md-5 tekst"
+          class="col-12 col-md-4 tekst"
           id="mobil-tekst"
           style="padding-top: 60px"
         >
@@ -197,13 +196,12 @@
           </h1>
         </div>
         <div
-          class="col-12 col-md-7 tekst"
+          class="col-12 col-md-8 tekst"
           id="mobil-img"
         >
           <img
             src="img/omtrapholt/Villa.png"
-            height="auto"
-            width="700"
+            class="img-fit"
             alt="Billed af villa efter ombygningen"
           />
         </div>
@@ -213,7 +211,7 @@
     <!-- Et fylde afsnit for at få afstand mellem afsnit i mobil tilstand -->
     <div class="container-fluid mobil">
       <div class="row">
-        <div class="col-12 fylde4">
+        <div class="col-12 fylde">
         </div>
       </div>
     </div>
@@ -223,7 +221,7 @@
 
     <!-- Her starter footer -->
 
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <div class="row footer bg-hvid">
         <div class="col-12 col-md-2 s-tekst" id="mobil-tekst">
           <h5>Adresse</h5>
@@ -234,10 +232,7 @@
           <p>Telefon: +45 76 30 05 30</p>
           <p>E-mail: kunstmuseum@trapholt.dk</p>
         </div>
-        <div
-          class="col-12 col-md-2 s-tekst justify-content-center"
-          id="mobil-tekst"
-        >
+        <div class="col-12 col-md-2 s-tekst justify-content-center" id="mobil-tekst">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d564.9622168877278!2d9.5317638!3d55.5001588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c9f353340994b%3A0x6a51107558c12ebf!2sTrapholt!5e0!3m2!1sda!2sdk!4v1701557252206!5m2!1sda!2sdk"
             width="180px"
@@ -250,7 +245,7 @@
         </div>
         <div class="col-12 col-md-2 s-tekst" id="mobil-tekst">
           <h5>Følg os</h5>
-          <div class="footer-icons justify-content-center">
+          <div class="f-icons justify-content-center">
             <a href="https://www.facebook.com/trapholt.dk/"
               ><img src="Img/icons/facebook.png" /> <br />
               <p>Facebook</p></a
@@ -290,16 +285,13 @@
             10.00 - 21.00
           </p>
         </div>
-        <div
-          class="col-12 col-md-4 s-tekst nyhed justify-content-center"
-          id="mobil-tekst"
-        >
+        <div class="col-12 col-md-4 s-tekst nyhed justify-content-center" id="mobil-tekst" >
           <h5>Nyhedsbrev</h5>
           <input type="text" placeholder="Indtast din e-mail" />
           <button>Tilmeld</button>
           <p>
             Tilmeld dig vores nyhedsbrev og få nyt om udstillinger,
-            arrangementer og tilbud fra Trapholt.
+            arrangementer <br> og tilbud fra Trapholt.
           </p>
         </div>
       </div>
@@ -307,32 +299,19 @@
 
     <!-- nederste del af footer -->
     <div class="container-fluid bg-hvid">
-      <div class="row" style="padding-left: 35px">
-        <div class="col-12 col-md-4" id="mobil-tekst">
-          <p>CVR: 11527132 EAN/ GLN: 5790002745249</p>
-        </div>
-        <div class="col-12 col-md-4 justify-content-center" id="mobil-tekst">
-          <img
-            class="img-fluid bund"
-            src="Img/navimg/en-US-UK-2022.webp"
-            alt=""
-          />
-          <img
-            class="img-fluid bund"
-            src="Img/navimg/kolding-city-design.png"
-            alt=""
-          />
-          <img
-            class="img-fluid bund"
-            src="Img/navimg/Michelin_Sticker_GV_2019_Interessant_ny.webp"
-            alt=""
-          />
-        </div>
-        <div class="col-12 col-md-4" id="mobil-tekst">
-          <p>© Trapholt 2021</p>
-        </div>
-      </div>
-    </div>
+      <div class="row justify-content-center">
+          <div class="col-12 col-md-4 text-center">
+              <p>CVR: 11527132 EAN/ GLN: 5790002745249</p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+              <img class="img-fluid bund" src="Img/navimg/en-US-UK-2022.webp" alt="Logo 1" />
+              <img class="img-fluid bund" src="Img/navimg/kolding-city-design.png" alt="Logo 2" />
+              <img class="img-fluid bund" src="Img/navimg/Michelin_Sticker_GV_2019_Interessant_ny.webp" alt="Logo 3" />
+          </div>
+          <div class="col-12 col-md-4 text-center">
+              <p>© Trapholt 2021</p>
+          </div>
+      </div>  
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

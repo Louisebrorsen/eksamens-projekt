@@ -16,15 +16,24 @@
       href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css"
     />
     <link rel="stylesheet" href="calendar.js">
+    <!-- Det lille icon på fanen -->
     <link rel="icon" href="/img/Logo/T.png">
   </head>
 
   <body>
-    <!-- Koden til navbaren starter her.  -->
+    <!-- Koden til navbaren starter her.  
+    Navbaren indeholder logo, menu bar, søge funktion og burger menu.
+    Den er lavet med bootstrap, hvor der er blevet tilføjet en container fluid, som er blevet tilføjet til css filen.
+    Den indeholder ul, som er en unordered list, hvor der er blevet tilføjet en class, som er blevet tilføjet til css filen.
+    Den indeholder også li, som er en list item, hvor der er blevet tilføjet en class, som er blevet tilføjet til css filen.
+    Derudover er der blevet tilføjet en a tag, som er et link, hvor der er blevet tilføjet en class, som er blevet tilføjet til css filen.
+    Der er også blevet tilføjet en img tag, som er et billede, hvor der er blevet tilføjet en src, som linker til billedet, og en alt tekst, hvis billedet ikke kan vises.
+    -->
     <nav class="navbar bg-br tekst navbar-expand-xxl bg-br">
       <div class="container-fluid">
         <!-- Her er afsnittet til logoet
-        Logoet har en funktion, hvor den fungerer som et link til forsiden         
+        Logoet har en funktion, hvor den fungerer som et link til forsiden  
+        Der er tilføjet en img tag, som er et billede, hvor der er blevet tilføjet en src, som linker til billedet, og en alt tekst, hvis billedet ikke kan vises.
         -->
         <a class="navbar-brand" href="index.html" > 
           <img
@@ -35,7 +44,14 @@
             class="d-inline-block align-text-top"
           />
         </a>
-        <!-- Menu bar --> 
+        <!-- Menu bar 
+        Menu baren er lavet med en ul, som er en unordered list, hvor der er blevet tilføjet en class, som er blevet tilføjet til css filen.
+        Den indeholder også li, som er en list item, hvor der er blevet tilføjet en class, som er blevet tilføjet til css filen.
+        Derudover er der blevet tilføjet en a tag, som er et link, hvor der er blevet tilføjet en class, som er blevet tilføjet til css filen.
+        Vi har valgt at lave menu baren med en ul, da det er en nem og overskuelig måde at lave en menu bar på.
+        Vi har gjort så at når man benytter den li der referer til Dagensprogram, så vil den tage en til afsnittet med kalenderen.
+        Når man er på de andre undersider og trykker på Dagensprogram, så vil den tage en til forsiden, hvor kalenderen er.
+        --> 
           
           <ul class="nav justify-content-center mobil" style="padding-right: 25px;">
             <li class="nav-item">
@@ -55,7 +71,12 @@
             </li>
           </ul>
 
-          <!-- Søg og burger menu -->
+          <!-- Søg og burger menu
+          Søg er lavet med en input type text, hvor der er blevet tilføjet en placeholder, og koden er fra bootstrap.
+          Burger menuen er lavet med en dropdown knap, hvor der er blevet tilføjet en knap med en dropdown menu, hvor der er blevet tilføjet en liste med links til de forskellige sider.
+          Dropdown menuens kode er fra bootstrap, hvor den er blebvet tilpasset så den passer til stil og design. Samt har de ønskede funktioner.
+          -->
+
         <div class="d-flex">
           <div class="dropdown web dropstart">
             <button
@@ -66,8 +87,18 @@
             >
               <span class="mdi mdi-menu" style="color: #f5f5f5; font-size: 30px;"></span>
             </button>
-            <!-- navbar links -->
-            <ul class="dropdown-menu ">
+            <!-- navbar links 
+            Den er opsat med ul og li elementer, hvor der er blevet tilføjet en class, som er blevet tilføjet til css filen.
+            Vi har valgt at benytte ul og li elementer, da det er en nem og overskuelig måde at lave en menu bar på.
+            Vi har fået lavet den ønskede funktion med at den kun er synlig ved mindre skærme, og at den forsvinder ved større skærme.
+            Vi har valgt denne funktion, da det giver en bedre brugeroplevelse, da menuen ikke vil være synlig på mindre skærme, 
+            da den vil være implementeret i burger menuen.
+            Vores dropdown menu har fået en class, som gør at menuen vender til venstre, og ikke til højre som den gør som standard.
+            Dette er gjort da det giver en bedre brugeroplevelse, da det er mere naturligt at menuen vender til venstre, 
+            da den ellers ikke vil være synlig på mindre skærme.
+            Den indeholder de samme funktioner som menu baren, og er lavet så den er responsiv, så den tilpasser sig skærmstørrelsen.
+            -->
+            <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="index.html">Forside</a></li>
               <li><a class="dropdown-item" href="index.html#Calendar">Dagens program</a></li>
               <li><a class="dropdown-item" href="arneJ.html">Arne Jacobsen</a></li>
@@ -78,7 +109,10 @@
               </div>
             </ul>
           </div>
-          <!-- Søge funktion -->
+          <!-- Søge funktion 
+          Søge funktionen er ikke fungerende, da vi ikke er blevet undervist i javascript.
+          Den er dog en del af vores design, da vi ønskede at have en søge funktion, da det er en vigtig funktion på en hjemmeside.
+          -->
           <div class="search mobil" style="padding-right: 25px;">
             <input type="text" placeholder="søg"/>
           </div>
@@ -86,15 +120,28 @@
       </div>
     </nav>
 
-    <!-- Her starter først afsnit, med en karrusel --> 
+   <!-- Her starter koden til karrusellen.
+    Den er lavet med bootstrap, hvor der er blevet tilføjet en caption til hver slide som beskriver billedet. 
+    Den er opsat ved at have 3 billeder, hvor den første er sat til active, så den starter med at vise det første billede.
+    I koden er der til at indsætte ønskede billede ved img src, og den har også en alt tekst, hvis billedet ikke kan vises.
+    Derudover er der beskrivelses bokse til at kunne tilføje tekst til billederne, som er blevet tilføjet i hver slide.
+    h5 er en headline som skal give en overordnet beskrivelse af billedet, og p er en paragraph som skal give en mere detaljeret beskrivelse af billedet.
+    Dette har vi valgt at indsætte da vores målgruppe, ønsker at få en beskrivelse af billederne, så de kan få en bedre forståelse af billederne.
+    Samt læse mere om billederne, hvis de ønsker det.
+    -->
+
     <div class="container-fluid" style="padding-bottom: 20px;">
       <div class="row">
+        <!-- 
+        -->
           <div
             id="carouselExampleCaptions"
             class="carousel slide"
-            data-bs-ride="false"
+            data-bs-ride="false"   
           >
+          <!-- Koden oven over (data-bs-ride) den forhindrer automatisk rulning af karrusellen ved indlæsning. -->
             <div class="carousel-indicators">
+              <!-- Indicators er punkterne nederst i karrusellen, der repræsenterer hver glide i karrusellen. -->
               <button
                 type="button"
                 data-bs-target="#carouselExampleCaptions"
@@ -116,6 +163,10 @@
                 aria-label="Slide 3"
               ></button>
             </div>
+            <!-- 
+            Her starter koden for selve indholdet af karrusellen.
+            I hvert item er billederne og beskrivelses boksene til de enkelte slids.
+            -->
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
@@ -159,8 +210,10 @@
                 </div>
               </div>
             </div>
-            <!-- Dettte er koden fra bootstrap der går at karusel funktionen fungerer. 
-                Den gør at når pilene bliver trykket eller når der er gået en hvis tid skifter til næste. -->
+            <!-- 
+            Dettte er koden fra bootstrap der gør at karrusel funktionen fungerer. 
+            Den gør at når pilene manuelt bliver trykket skifter til næste slide. 
+            -->
             <button
               class="carousel-control-prev"
               type="button"
@@ -189,11 +242,21 @@
         </div>
       </div>
     </div>
+
+    <!-- Vores afsnit er opdelt således. 
+    Der er benyttet denne kode til col elementerne:
+    "col-12 col-md-5 tekst" + "col-12 col-md-5 tekst"
+    Denne container styrer bredde og layout. På små skærme (telefon tilstand), vil den strække sig over hele bredden (12 kolonner), mens den på mellemstore skærme og større (md og op) vil indtage 5/7 kolonner. Dette skaber et responsivt design, der tilpasser sig forskellige skærmstørrelser. 
+    Den col der står først er til venstre og den col der står sidst er til højre.
+    Teksten er lavet med en h1 tag, som er en headline, og en p tag, som er en paragraph.
+    Billedet er lavet med en img tag, hvor der er blevet tilføjet en src, som linker til billedet, og en alt tekst, hvis billedet ikke kan vises.
+    Vi har lavet en farvet boks som er lavet med en div tag, hvor der er blevet tilføjet en class, som er blevet tilføjet til css filen.
+    -->
     
     <!-- Afsnit med Arne Jacobsen -->
     <div class="container-fluid ">
       <div class="row bg-mbl" style="height: 550px;">
-        <div class="col-12 col-md-5 tekst" id="mobil-tekst">
+        <div class="col-12 col-md-6 tekst" id="mobil-tekst">
           <h1>ARNE JACOBSEN</h1>
           <!-- Tekst taget fra https://arnejacobsen.com/ og oversat til dansk -->
           <p>
@@ -204,12 +267,12 @@
             enkelhed og funktionalitet, hvilket har gjort dem tidløse ikoner inden for designverdenen. Gennem den originale Arne Jacobsen hjemmeside 
             får besøgende mulighed for at udforske hans mest ikoniske projekter, se hans mesterværker inden for møbeldesign, og få indblik i den kreative proces, 
             der formede hans enestående karriere. Derved bliver Jacobsens indflydelse på designhistorien og hans fortsatte relevans i det 21. århundrede fremhævet 
-            på en informativ og inspirerende måde. <br>
+            på en informativ og inspirerende måde. <br> <!-- br tagget er et linjeskift og bruges til at indsætte et linjeskift i teksten på websiden -->
             Læs mere om Arne Jacobsen og hans designunivers <a href="https://arnejacobsen.com/" class="text-reset">her</a>.
           </p> 
         </div>
-        <div class="col-12 col-md-7" id="mobil-img"> 
-          <img src="img/forside/Billede1 AJ potræt.png" alt="Potræt billede af Arne Jacobsen" />
+        <div class="col-12 col-md-6" id="mobil-img"> 
+          <img src="img/forside/Billede1 AJ potræt.png" class="img-fit" alt="Potræt billede af Arne Jacobsen" />
         </div>
       </div>
     </div>
@@ -223,14 +286,18 @@
 
     <!-- Afsnit hvor kalender indgår og oversigt -->
     <div class="container-fluid" id="Calendar" >
-      <div class="row">
+      <div class="row extra">
         <h1>Dagens program</h1>
         <div class="col-12 col-md-5" id="mobil-img">
           <div class="card">
             <div class="card-body">
               <div class="col-12 col-md-7" id="mobil-img">
                 <!-- Kalanderen er hedder Fullscreen Flat Calendar og er fundet på https://www.sliderrevolution.com/resources/html-calendar/
-                Den er blevet tilpasset i Css filen, så den passer til designet med farver.
+                Den er blevet tilpasset i css filen, så den passer til designet med farver.
+                Samt at der er blevet ændret i selve indholdet i kalenderen, så den passer til vores behov og sprog.
+                Kalenderen og dagsprogrammet har ikke den ønskede funktion, da den ikke kan vise dagsprogrammet for den valgte dato eller skifte mellem datoer.
+                Dette er grundet at vi ikke er blevet undervist i javascript endnu, og derfor ikke har kunne tilføje den ønskede funktion.
+                Men vi ønskede at illustrere hvordan det kunne se ud, hvis vi havde haft den ønskede funktion.
                 -->
                 <div id='fullDiv' >
                   <ul>
@@ -283,11 +350,15 @@
           </div>
         </div> 
         <!--
-          I dennne kolonne skal listen over dagsprogrammet for den valgte dato i kalenderen være.
-         -->
+        I dennne kolonne er listen over dagsprogrammet for den valgte dato i kalenderen være.
+        Den er lavet med en list group, hvor der er blevet tilføjet en class, som er blevet tilføjet til css filen.
+        Vores tanker bag er at man skal kunne vælge en dato i kalenderen, og så vil dagsprogrammet for den valgte dato blive vist.
+        Vi har valgt at lave dagsprogrammet som en liste, da det er en nem og overskuelig måde at vise dagsprogrammet på.
+        Det ønskes at når der intet er på programmet at den forsvinder.
+        -->
         <div class="col-12 col-md-7 s-tekst"  id="mobil-img" >
-          <div class="list-group dagsprogrammet">
-            <a href="#" class="list-group-item list-group-item-action bg-h" aria-current="true">
+          <div class="list-group">
+            <a class="list-group-item list-group-item-action bg-h" aria-current="true">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Skole rundvisning</h5>
                 <small>10:45</small>
@@ -295,7 +366,7 @@
               <p class="mb-1">EASV - skoleklasse</p>
               <small>Arne Jacobsen + kubeflex</small>
             </a>
-            <a href="#" class="list-group-item list-group-item-action bg-h">
+            <a class="list-group-item list-group-item-action bg-h">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Privat rundvisning</h5>
                 <small class="text-muted">11:00</small>
@@ -303,7 +374,7 @@
               <p class="mb-1">Privat gruppe rundvisning</p>
               <small class="text-muted">Nanna Ditzel</small>
             </a>
-            <a href="#" class="list-group-item list-group-item-action bg-h">
+            <a class="list-group-item list-group-item-action bg-h">
               <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">Skole rundvisning</h5>
                 <small class="text-muted">11:45</small>
@@ -321,7 +392,7 @@
     <div class="container-fluid" style="padding-bottom: 40px;">
       <div class="row" style="padding-top: 40px;">
         <div class="col-12 col-md-7 s-tekst"  id="mobil-img"> 
-          <img src="img/forside/Michael-Kvium-2.png"  class="img-fluid" alt="Værk af Michael Kvium, Cirkus Humanus III, 1997"> <!-- height="700" width="700" -->
+          <img src="img/forside/Michael-Kvium-2.png"  class="img-fit" alt="Værk af Michael Kvium, Cirkus Humanus III, 1997"> <!-- height="700" width="700" -->
         </div>
         <div class="col-12 col-md-5 s-tekst" id="mobil-tekst" style="padding-top: 20px;">
           <h1>MICHAEL KVIUM</h1>
@@ -353,7 +424,7 @@
         </p>
       </div>
       <div class="col-12 col-md-7" id="mobil-img" > 
-        <img src="img/forside/nanna-ditzel 1.png" height="auto"  alt="Billed potræt af Nanna Ditzel, hvor hendes stole indgår">
+        <img src="img/forside/nanna-ditzel 1.png" class="img-fit"  alt="Billed potræt af Nanna Ditzel, hvor hendes stole indgår">
       </div>
     </div>
    </div>
@@ -371,7 +442,7 @@
    <div class="container-fluid" style="padding-bottom: 250px;">
     <div class="row bg-b" style="height: 500px;">
       <div class="col-12 col-md-7" id="mobil-img" > 
-        <img src="img/forside/ThingsMatter-3.1.png" height="auto" alt="Billede af kunstinstallation Things Matter">
+        <img src="img/forside/ThingsMatter-3.1.png" class="img-fit" alt="Billede af kunstinstallation Things Matter">
       </div>
       <div class="col-12 col-md-5 tekst" id="mobil-tekst"> 
         <h1>
@@ -395,8 +466,7 @@
   </div>
 
   <!-- Linje der skiller sig fra indhold til footer -->
-   <hr>
-
+  <hr>
 
     <!-- Her starter footer -->
     <div class="container-fluid ">
@@ -423,7 +493,7 @@
         </div>
         <div class="col-12 col-md-2 s-tekst" id="mobil-tekst">
           <h5>Følg os</h5>
-          <div class="footer-icons justify-content-center">
+          <div class="f-icons justify-content-center">
             <a href="https://www.facebook.com/trapholt.dk/"
               ><img src="Img/icons/facebook.png" /> <br />
               <p>Facebook</p></a
@@ -469,7 +539,7 @@
           <button>Tilmeld</button>
           <p>
             Tilmeld dig vores nyhedsbrev og få nyt om udstillinger,
-            arrangementer og tilbud fra Trapholt.
+            arrangementer <br> og tilbud fra Trapholt.
           </p>
         </div>
       </div>
@@ -477,22 +547,21 @@
 
     <!-- nederste del af footer -->
     <div class="container-fluid bg-hvid">
-      <div class="row" style="padding-left: 35px;">
-        <div class="col-12 col-md-4" id="mobil-tekst">
-          <p>CVR: 11527132
-            EAN/ GLN: 5790002745249</p>
-        </div>
-        <div class="col-12 col-md-4 justify-content-center" id="mobil-tekst"> 
-          <img class="img-fluid bund" src="Img/navimg/en-US-UK-2022.webp" alt="">
-          <img class="img-fluid bund" src="Img/navimg/kolding-city-design.png" alt="">
-          <img class="img-fluid bund" src="Img/navimg/Michelin_Sticker_GV_2019_Interessant_ny.webp" alt="">
-        </div>
-        <div class="col-12 col-md-4" id="mobil-tekst">
-          <p> © Trapholt 2021</p>
-        </div>
+      <div class="row justify-content-center">
+          <div class="col-12 col-md-4 text-center">
+              <p>CVR: 11527132 EAN/ GLN: 5790002745249</p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+              <img class="img-fluid bund" src="Img/navimg/en-US-UK-2022.webp" alt="Logo 1" />
+              <img class="img-fluid bund" src="Img/navimg/kolding-city-design.png" alt="Logo 2" />
+              <img class="img-fluid bund" src="Img/navimg/Michelin_Sticker_GV_2019_Interessant_ny.webp" alt="Logo 3" />
+          </div>
+          <div class="col-12 col-md-4 text-center">
+              <p>© Trapholt 2021</p>
+          </div>
       </div>
-    </div>
 
+    <!-- Disse scripts refererer til JavaScript-biblioteker, der er en del af Bootstrap-frameworket. -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
